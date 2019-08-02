@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input::placeholder {
+  color: #d7d7d7;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  height: 100px;
+  background-color: #f4f4f4;
+  box-shadow: 10px 3px 3px #cdcdcd;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding: 19px 51px;
+}
+
+header .button {
+  display: inline-block;
+}
+
+header .butt {
+  width: 174px;
+  justify-content: space-between;
+  display: flex;
+}
+
+header li a {
+  text-decoration: none;
+  background-color: #0271c7;
+  border: none;
+  color: #f4f6f9;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+header .search {
+  display: inline-block;
+}
+
+header .search p .inpSe {
+  width: 200px;
+  height: 26px;
+  padding: 0 7px;
+  border-radius: 2px;
+  margin-bottom: 0;
+  border: 1px solid #d5d5d5;
+  letter-spacing: -0.4px;
+  -webkit-appearance: none;
+}
+
+#calendar {
+  margin: 16px 0 0 0;
+}
+
+.container .content {
+  padding: 0 50px;
+}
+
+.container .content #calendar .wrapper .header {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .content #calendar .wrapper .header button {
+  cursor: pointer;
+  border: 1px solid #b2b2b2;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content #calendar .wrapper .header button.arrow {
+  font-size: 7px;
+  color: #939393;
+}
+
+.container .content #calendar .wrapper .header button.now-date-btn {
+  width: 65px;
+}
+
+.container .content #calendar .wrapper .header .title {
+  font-weight: 600;
+  margin: 0 7px;
+  color: initial;
+}
+
+.container .content #calendar .wrapper .header button.now-date-btn {
+  margin: 0 7px;
+}
+
+.container .content #calendar .wrapper .body {
+  margin: 11px 0 0 0;
+}
+
+.container .content #calendar .wrapper .body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container .content #calendar .wrapper .body table tbody tr {
+  display: flex;
+}
+
+.container .content #calendar .wrapper .body table tbody tr td {
+  height: 118px;
+  width: calc(100% / 6);
+  border: 1px solid #ebebeb;
+  display: flex;
+  font-size: 10px;
+  padding: 7px 8px 0 8px;
+  color: #afafaf;
+  cursor: pointer;
+}
+
+.container .content #calendar .wrapper .body table tbody tr td.current, .container .content #calendar .wrapper .body table tbody tr td:hover {
+  background-color: #f5f5f5;
+}
+
+.container .content #calendar .wrapper .body table tbody tr td.gray {
+  background-color: #d7d7d7;
+}
+
+.container .content #calendar .wrapper .body table tbody tr td:not(:last-child) {
+  border-right: none;
+}
+
+.container .content #calendar .wrapper .body table tbody tr:not(:last-child) td {
+  border-bottom: none;
+}
